@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Course Page</title>
+  </head>
+  <body>
+    <h1>Sougata Mukherjee</h1>
+    <form id="text-fields">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="text-fields-name">Name:</label>
+              <input id="text-fields-name" value="Sougata Mukherjee" />
+            </td>
+            <td>
+              <label for="text-fields-pronoun">Pronoun:</label>
+              <select id="select-one-genre">
+                <option selected value="NONE">None</option>
+                <option value="HE">Him</option>
+                <option value="SHE">Her</option>
+              </select>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>
+              <label for="text-fields-title">Title:</label>
+              <input id="text-fields-title" /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h2>Contact</h2>
+              <p>
+                No registered service, you can add some on the
+                <a href="#"> settings</a> page.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h2>Biography</h2>
+              <p>Software Developer, Student</p>
+              <textarea cols="30" rows="10">
+I am a Software Developer and a student.</textarea
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h2>Links</h2>
+
+              <p>
+                <ul>
+                  <li>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                </a>
+                </li>
+                </ul>
+              </p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th></th>
+                    <th>URL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input id="text-fields-title" value="You Tube" /></td>
+                      <td>&rarr;</td>
+                    <td><input id="text-fields-title" value="https://www.youtube.com" /></td></td>
+                    <td><a href="#">Remove</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button>Add another link</button>
+
+              <div class="buttons">
+                <button type="button">Cancel</button>
+                <button type="button">Save Profile</button>
+              </div>
+
+              <button href="#">Edit Profile</button>
+              <button href="#">Cancel Editing</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

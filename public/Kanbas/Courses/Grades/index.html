@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Grades</title>
+  </head>
+  <body>
+    <select>
+      <option>Gradebook</option>
+      <option>Change Gradebook view</option>
+      <option>Traditional Gradebook</option>
+      <option>Individual Gradebook</option>
+    </select>
+    <button>Import</button>
+    <select>
+      <option>Export</option>
+      <option>Export Current Gradebook View</option>
+      <option>Export Entire Gradebook</option>
+    </select>
+    <button>Configure</button>
+    <form id="text-fields">
+      <h4>Student Names</h4>
+      <label for="text-fields-studentnames"></label>
+      <input
+        id="text-fields-studentnames"
+        placeholder="Search Students"
+      /><br />
+      <h4>Assignment Names</h4>
+      <label for="text-fields-assignmentnames"></label>
+      <input
+        id="text-fields-assignmentnames"
+        placeholder="Search Assignments"
+      /><br /><br />
+      <input type="submit" value="Apply Filters" />
+    </form>
+    <!-- Table containing assignments, students and their grades -->
+    <table border="1">
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <!-- Assignments Header-->
+          <th>Student Name</th>
+          <th>A1 SETUP <br />Out of 100</th>
+          <th>A2 HTML <br />Out of 100</th>
+          <th>A3 CSS <br />Out of 100</th>
+          <th>A4 BOOTSTRAP <br />Out of 100</th>
+          <th>A5 JAVASCRIPT <br />Out of 100</th>
+          <th>A6 REACT <br />Out of 100</th>
+          <th>A7 REDUX <br />Out of 100</th>
+          <th>A8 NODE <br />Out of 100</th>
+          <th>A9 MONGO <br />Out of 100</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body-->
+      <tbody>
+        <!-- First Row -->
+        <tr>
+          <td>Alice Wooderland</td>
+          <td>98</td>
+          <td>100</td>
+          <td>95</td>
+          <td>90</td>
+          <td>85</td>
+          <td>80</td>
+          <td>75</td>
+          <td>70</td>
+          <td>65</td>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+          <td>Princess Leia</td>
+          <td>97</td>
+          <td>99</td>
+          <td>94</td>
+          <td>89</td>
+          <td>84</td>
+          <td>79</td>
+          <td>74</td>
+          <td>69</td>
+          <td>64</td>
+        </tr>
+        <tr>
+          <td>Charlie Brown</td>
+          <td>87</td>
+          <td>79</td>
+          <td>66</td>
+          <td>59</td>
+          <td>44</td>
+          <td>29</td>
+          <td>84</td>
+          <td>66</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Jane Doe</td>
+          <td>79</td>
+          <td>100</td>
+          <td>49</td>
+          <td>98</td>
+          <td>48</td>
+          <td>97</td>
+          <td>54</td>
+          <td>33</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

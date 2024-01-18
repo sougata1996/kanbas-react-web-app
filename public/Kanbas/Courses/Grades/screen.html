@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <title>Main Screen</title>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Calendar/index.html">Calendar</a>
+              </li>
+              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+              <li><a href="/Kanbas/History/index.html">History</a></li>
+              <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
+              <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
+              <li><a href="/Kanbas/Help/index.html">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+              </li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> People</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Panopto Video</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Syllabus</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Collaboration</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Settings</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Outcomes</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Rubrics</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Files</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Pages</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Announcements</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Discussions</a
+                >
+              </li>
+            </ul>
+          </td>
+          <td>
+            <table border="0" width="100%">
+              <tr>
+                <!-- Left Column -->
+                <td valign="top" width="50%">
+                  <select>
+                    <option>Gradebook</option>
+                    <option>Change Gradebook view</option>
+                    <option>Traditional Gradebook</option>
+                    <option>Individual Gradebook</option>
+                  </select>
+                  <button>Import</button>
+                  <select>
+                    <option>Export</option>
+                    <option>Export Current Gradebook View</option>
+                    <option>Export Entire Gradebook</option>
+                  </select>
+                  <button>Configure</button>
+                  <form id="text-fields">
+                    <h4>Student Names</h4>
+                    <label for="text-fields-studentnames"></label>
+                    <input
+                      id="text-fields-studentnames"
+                      placeholder="Search Students"
+                    /><br />
+                    <h4>Assignment Names</h4>
+                    <label for="text-fields-assignmentnames"></label>
+                    <input
+                      id="text-fields-assignmentnames"
+                      placeholder="Search Assignments"
+                    /><br /><br />
+                    <input type="submit" value="Apply Filters" />
+                  </form>
+                  <!-- Table containing assignments, students and their grades -->
+                  <table border="1">
+                    <!-- Table Header -->
+                    <thead>
+                      <tr>
+                        <!-- Assignments Header-->
+                        <th>Student Name</th>
+                        <th>A1 SETUP <br />Out of 100</th>
+                        <th>A2 HTML <br />Out of 100</th>
+                        <th>A3 CSS <br />Out of 100</th>
+                        <th>A4 BOOTSTRAP <br />Out of 100</th>
+                        <th>A5 JAVASCRIPT <br />Out of 100</th>
+                        <th>A6 REACT <br />Out of 100</th>
+                        <th>A7 REDUX <br />Out of 100</th>
+                        <th>A8 NODE <br />Out of 100</th>
+                        <th>A9 MONGO <br />Out of 100</th>
+                      </tr>
+                    </thead>
+
+                    <!-- Table Body-->
+                    <tbody>
+                      <!-- First Row -->
+                      <tr>
+                        <td>Alice Wooderland</td>
+                        <td>98</td>
+                        <td>100</td>
+                        <td>95</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>80</td>
+                        <td>75</td>
+                        <td>70</td>
+                        <td>65</td>
+                      </tr>
+                      <!-- Second Row -->
+                      <tr>
+                        <td>Princess Leia</td>
+                        <td>97</td>
+                        <td>99</td>
+                        <td>94</td>
+                        <td>89</td>
+                        <td>84</td>
+                        <td>79</td>
+                        <td>74</td>
+                        <td>69</td>
+                        <td>64</td>
+                      </tr>
+                      <tr>
+                        <td>Charlie Brown</td>
+                        <td>87</td>
+                        <td>79</td>
+                        <td>66</td>
+                        <td>59</td>
+                        <td>44</td>
+                        <td>29</td>
+                        <td>84</td>
+                        <td>66</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>Jane Doe</td>
+                        <td>79</td>
+                        <td>100</td>
+                        <td>49</td>
+                        <td>98</td>
+                        <td>48</td>
+                        <td>97</td>
+                        <td>54</td>
+                        <td>33</td>
+                        <td>35</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
