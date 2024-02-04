@@ -1,0 +1,135 @@
+.text-red {
+  color: red;
+  text-decoration: none;
+}
+
+.text-red:hover {
+  color: darkred;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-secondary {
+  background-color: gray;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.fa-check-circle,
+.fa-check {
+  color: green;
+}
+
+#course-toggler {
+  margin-left: 50px;
+}
+
+.table-layout {
+  display: table;
+  width: 100%;
+}
+
+.table-row,
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+}
+
+.fa-chevron-down {
+  font-size: 25px;
+  color: red;
+}
+
+.course-details {
+  padding: 20px;
+}
+
+.course-details label {
+  font-weight: bold;
+}
+
+.course-details select,
+.course-details input[type="date"],
+.course-details textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.course-card {
+  padding: 15px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-card:hover {
+  background-color: #e0e0e0;
+}
+
+.hidden-course {
+  display: none;
+}
+
+.course-dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  min-height: 200px;
+  margin-top: 20px;
+}
+
+/* Media Query to hide the last column when the window narrows below 800px (change as per your needs) */
+/* When the window is narrow */
+@media (max-width: 1000px) {
+  .third {
+    grid-column: 2/ -2;
+  }
+
+  .fourth {
+    display: none;
+  }
+}
+
+/* When the window is even narrower */
+@media (max-width: 500px) {
+  .first,
+  .second,
+  .fourth {
+    display: none;
+  }
+  .third {
+    grid-column: 4/-4;
+  }
+}
+
+.first,
+.second {
+  width: 2300px;
+}
+
+.third {
+  grid-column: 2 / -2;
+}
+
+.container-fluid {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  #kanbas-nav,
+  #course-nav {
+    display: none;
+  }
+}

@@ -1,210 +1,229 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Main Screen</title>
-  </head>
-  <body>
-    <table>
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Account/Profile/screen.html"> Account</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Calendar/index.html">Calendar</a>
-              </li>
-              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-              <li><a href="/Kanbas/History/index.html">History</a></li>
-              <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-              <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-              <li><a href="/Kanbas/Help/index.html">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
-              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> People</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Panopto Video</a
-                >
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> Syllabus</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Collaboration</a
-                >
-              </li>
-              <li>
-                <a href="/Kanbas/Settings/screen.html"> Settings</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> Outcomes</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> Rubrics</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> Files</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html"> Pages</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Announcements</a
-                >
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Discussions</a
-                >
-              </li>
-            </ul>
-          </td>
-          <td>
-            <table border="0" width="100%">
-              <tr>
-                <!-- Left Column -->
-                <td valign="top" width="50%">
-                  <select>
-                    <option>Gradebook</option>
-                    <option>Change Gradebook view</option>
-                    <option>Traditional Gradebook</option>
-                    <option>Individual Gradebook</option>
-                  </select>
-                  <button>Import</button>
-                  <select>
-                    <option>Export</option>
-                    <option>Export Current Gradebook View</option>
-                    <option>Export Entire Gradebook</option>
-                  </select>
-                  <button>Configure</button>
-                  <form id="text-fields">
-                    <h4>Student Names</h4>
-                    <label for="text-fields-studentnames"></label>
-                    <input
-                      id="text-fields-studentnames"
-                      placeholder="Search Students"
-                    /><br />
-                    <h4>Assignment Names</h4>
-                    <label for="text-fields-assignmentnames"></label>
-                    <input
-                      id="text-fields-assignmentnames"
-                      placeholder="Search Assignments"
-                    /><br /><br />
-                    <input type="submit" value="Apply Filters" />
-                  </form>
-                  <!-- Table containing assignments, students and their grades -->
-                  <table border="1">
-                    <!-- Table Header -->
-                    <thead>
-                      <tr>
-                        <!-- Assignments Header-->
-                        <th>Student Name</th>
-                        <th>A1 SETUP <br />Out of 100</th>
-                        <th>A2 HTML <br />Out of 100</th>
-                        <th>A3 CSS <br />Out of 100</th>
-                        <th>A4 BOOTSTRAP <br />Out of 100</th>
-                        <th>A5 JAVASCRIPT <br />Out of 100</th>
-                        <th>A6 REACT <br />Out of 100</th>
-                        <th>A7 REDUX <br />Out of 100</th>
-                        <th>A8 NODE <br />Out of 100</th>
-                        <th>A9 MONGO <br />Out of 100</th>
-                      </tr>
-                    </thead>
 
-                    <!-- Table Body-->
-                    <tbody>
-                      <!-- First Row -->
-                      <tr>
-                        <td>Alice Wooderland</td>
-                        <td>
-                          <input type="number" value="98" />
-                        </td>
-                        <td>100</td>
-                        <td>95</td>
-                        <td>90</td>
-                        <td>85</td>
-                        <td>80</td>
-                        <td>75</td>
-                        <td>70</td>
-                        <td>65</td>
-                      </tr>
-                      <!-- Second Row -->
-                      <tr>
-                        <td>Princess Leia</td>
-                        <td>97</td>
-                        <td>99</td>
-                        <td>
-                          <input type="number" value="94" />
-                        </td>
-                        <td>89</td>
-                        <td>84</td>
-                        <td>79</td>
-                        <td>74</td>
-                        <td>69</td>
-                        <td>64</td>
-                      </tr>
-                      <tr>
-                        <td>Charlie Brown</td>
+<head>
+    <title>Kanbas Grades</title>
+    <script src="https://kit.fontawesome.com/9512067f90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="../Home/screen.css" rel="stylesheet" />
+    <link href="../Assignments/screen.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav aria-label="breadcrumb" class="custom-breadcrumb ">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><i class="fa fa-bars"></i></li>
+        <li class="breadcrumb-item">CS52100</li>
+        <li class="breadcrumb-item">Spring</li>
+        <li class="breadcrumb-item section-crumb">A</li>
+        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+        
+    </ol>
+    <hr class="my-1">
+    
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <br>
+        <br>
+        <div class="col-1 Navigation">
+            <div class="link-container">
+                <!-- ... (left Navigation content unchanged) ... -->
+
+                    <ul>
+                        <li>
+                            <img
+                              src="../../../images/Logo.png"
+                              width="80px"
+                              height="80px"
+                              style="background-color: aliceblue"
+                            />
+                          </li>
+                        <li>
+                            <div class="block-container">
+                            <p><i class="fa-regular fa-user" id="custom-user"></i><br>
+                            <a href="../../Account/Profile/screen.html">Account</a></p>
+                        </div>
+                        </li>
+    
+                        <li><div class="block-container"> <p><i class="fa-solid fa-gauge" id="custom-board"></i> <br>
+                            <a href="../../Dashboard/screen.html">Dashboard</a></p></div></li>
+    
+                        <li class="navSelected">
+                            <div class="block-container"><p><i class="fa-solid fa-book" id="custom-book"></i>
+                            <br>
+                            <a href="../../Courses/Home/screen.html">Courses</a>
+                        </p>
+                    </div>
+                    </li>
+    
+                        <li><div class="block-container">
+                            <p><i class="fa-solid fa-calendar-days" id="custom-calendar"> </i><br>
+                            <a href="#">Calendar</a>
+                        </p></div></li>
+    
+                        <li><div class="block-container"><p><i class="fa-solid fa-inbox" id="custom-icon"></i> <br>
+                            <a href="#">Inbox</a></p></div></li>
+    
+                        <li><div class="block-container"><p><i class="fa-regular fa-clock" id="custom-clock"> </i> <br>
+                            <a href="#">History</a></p></div></li>
+    
+                        <li><div class="block-container"><p><i class="fa-solid fa-tv" id="custom-studio"></i> <br>
+                            <a href="#">Studio</a></div></li>
+    
+                        <li><div class="block-container"><p><i class="fa-solid fa-right-from-bracket" id="custom-common"></i><br>
+                            <a href="#">Commons</a></div></li>
+                
+                        <li><div class="block-container"><p><i class="fa-solid fa-circle-question" id="custom-help"></i>
+                            <br> <a href="#">Help</a></p></div>
+                        </li>
+                        </ul>
+            </div>
+        </div>
+        <div class="col-2 account-navigation">
+            
+            <ul class="list-group">
+                <!-- ... (account navigation content unchanged) ... -->
+            
+                        <li><a href="../Home/screen.html">Home</a></li>
+                        <li><a href="../Home/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="../Assignments/screen.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li class="selected"><a href="../Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="../../Settings/screen.html">Settings</a></li>
+    
+            </ul>
+        </div>
+    <div class="col-8">
+    
+        <!-- Gradebook and other Buttons -->
+        <div class="d-flex mb-2 float-right">
+      
+            <button class="btn btn-secondary mr-2"><i class="fas fa-file-import"></i> Import</button>
+            <div class="btn-group">
+                <button class="btn btn-success"><i class="fas fa-file-export"></i> Export</button>
+                <button class="btn btn-success dropdown-toggle mr-2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"></button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <!-- Add more options as needed -->
+                </div>
+            </div>
+            <button class="btn btn-info "><i class="fa-solid fa-gear"></i></button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- Student and Assignment Search Bars -->
+        <div class="row mb-3">
+            <div class="col">
+                <h4>Student Names</h4>
+                <input type="text" class="form-control" placeholder="Search Students">
+            </div>
+            <div class="col">
+                <h4>Assignment Names</h4>
+                <input type="text" class="form-control" placeholder="Search Assignments">
+            </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+              <button class="btn btn-primary"><i class="fas fa-filter"></i> Apply Filters</button>
+          </div>
+      </div>
+
+        <!-- Grades Table -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A1 SETUP Out of 100</th>
+                        <th>A2 HTML Out of 100</th>
+                        <th>A3 CSS Out of 100</th>
+                        <th>A4 BOOTSTRAP Out of 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alica Wonder</td>
+                        <td><input type="text" class="form-control" value="98"></td>
+                        <td>92</td>
                         <td>87</td>
-                        <td>79</td>
-                        <td>66</td>
-                        <td>59</td>
-                        <td>44</td>
-                        <td>
-                          <input type="number" value="29" />
-                        </td>
-                        <td>84</td>
-                        <td>66</td>
-                        <td>60</td>
-                      </tr>
-                      <tr>
-                        <td>Jane Doe</td>
-                        <td>79</td>
-                        <td>100</td>
-                        <td>49</td>
-                        <td>98</td>
-                        <td>48</td>
-                        <td>97</td>
-                        <td>54</td>
-                        <td>
-                          <input type="number" value="33" />
-                        </td>
-                        <td>35</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                      <td>Joe Doe</td>
+                      <td>98</td>
+                      <td><input type="text" class="form-control" value="92"></td>
+                      <td>87</td>
+                      <td>90</td>
+                    </tr>
+                    <tr>
+                      <td>Mika Christian</td>
+                      <td><input type="text" class="form-control" value="20"></td>
+                      <td>95</td>
+                      <td>82</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td>Sabastian Shah</td>
+                      <td><input type="text" class="form-control" value="2"></td>
+                      <td>92</td>
+                      <td>87</td>
+                      <td>96</td>
+                    </tr>
+                    <tr>
+                      <td>Adrain Brook</td>
+                      <td>45</td>
+                      <td>92</td>
+                      <td>87</td>
+                      <td>93</td>
+                    </tr>
+                    <tr>
+                      <td>Cookie Kiki</td>
+                      <td><input type="text" class="form-control" value="98"></td>
+                      <td>29</td>
+                      <td>36</td>
+                      <td>58</td>
+                    </tr>
+                    <tr>
+                      <td>Ian Wonder</td>
+                      <td><input type="text" class="form-control" value="56"></td>
+                      <td>92</td>
+                      <td>23</td>
+                      <td>96</td>
+                    </tr>
+                </tbody>
             </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+        </div>
+    </div>
+
+</div>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
 </html>

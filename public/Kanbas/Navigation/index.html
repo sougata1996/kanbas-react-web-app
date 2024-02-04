@@ -1,24 +1,114 @@
 <html>
   <head>
     <title>Course Navigation</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="../../libs/font-awesome/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
-    <ul>
-      <li><a href="/Kanbas/Account/Navigation/index.html"> Account</a></li>
-      <li>
-        <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-      </li>
-      <li>
-        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-      </li>
-      <li>
-        <a href="/Kanbas/Calendar/index.html">Calendar</a>
-      </li>
-      <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-      <li><a href="/Kanbas/History/index.html">History</a></li>
-      <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-      <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-      <li><a href="/Kanbas/Help/index.html">Help</a></li>
-    </ul>
+    <div class="navigation-container">
+      <div class="Navigation">
+        <ul>
+          <div class="link-container">
+            <li>
+              <img
+                src="../../images/Logo.png"
+                width="80px"
+                height="80px"
+                style="background-color: aliceblue"
+              />
+            </li>
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-regular fa-user custom fa-2x account"></i
+                  ><br />
+                  <a href="/Kanbas/Account/Navigation/index.html">Account</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="navSelected">
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-tachometer fa-2x"></i> <br />
+                  <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-book fa-2x custom"></i>
+                  <br />
+                  <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-calendar fa-2x custom"> </i><br />
+                  <a href="#">Calendar</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-inbox fa-2x custom"></i> <br />
+                  <a href="#">Inbox</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-regular fa-clock-o fa-2x custom"> </i> <br />
+                  <a href="#">History</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-tv fa-2x custom"></i> <br />
+                  <a href="#">Studio</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-arrow-circle-right fa-2x custom"></i
+                  ><br />
+                  <a href="#">Commons</a>
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="block-container">
+                <p>
+                  <i class="fa fa-solid fa-question-circle fa-2x custom"></i>
+                  <br />
+                  <a href="#">Help</a>
+                </p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
