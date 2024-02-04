@@ -1,0 +1,72 @@
+/** 
+    Dashboard
+  */
+.dashboard-header {
+  text-align: justify;
+  padding: 10px;
+  width: 200px; /* Match the width of the navigation bar */
+}
+
+.dashboard-header h1 {
+  margin-left: 100px;
+  position: relative;
+  font-size: 35px; /* Adjust the font size as needed */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px; /* Adjust the value as needed */
+  margin-top: 30px; /* Add spacing */
+}
+
+.dashboard-hr {
+  margin-bottom: 20px;
+  border: none;
+  height: 1px; /* Adjust the height as needed */
+  background-color: black; /* Color of the horizontal rule */
+}
+
+.published-courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 270px;
+  gap: 30px; /* This ensures there's a gap of 30px between each course */
+  margin-left: -10px; /* Offset for Bootstrap's default margin */
+  margin-right: -15px; /* Offset for Bootstrap's default margin */
+}
+.card {
+  width: 250px; /* Set the min-width */
+  max-width: 270px; /* Set the max-width */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .published-courses-grid {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 900px) {
+  .published-courses-grid {
+    justify-content: center;
+  }
+}
+
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Add your desired background color */
+  z-index: 1000; /* Adjust the z-index to make sure it appears above other elements */
+  text-align: left; /* Left-align the text in the header */
+  padding: 10px; /* Add padding to the header if necessary */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a better visual effect */
+}
+
+/* Adjust the navigation container styles */
+.navigation-container {
+  margin-top: 60px; /* Add margin to the top to avoid overlapping with the fixed header */
+}
