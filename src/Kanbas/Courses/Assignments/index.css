@@ -1,0 +1,52 @@
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.fa-file-lines {
+    color: green;
+    width: 40px;  /* adjust as needed */
+    height: 30px; /* adjust as needed */
+    margin-right: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+  
+
+.plus {
+    padding-top: 1px;
+    padding-left: 5px;
+  }
+
+  .btn-secondary {
+    background-color: rgb(211, 211, 211);
+    border-color: rgb(211, 211, 211);
+    color: black;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.button-group .btn {
+    background-color: white; /* Default button color */
+    border: 2px solid transparent; /* Transparent border */
+    color: red; /* Text color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect */
+}
+.checkmark-icon {
+    color: green; /* Adjust as needed */
+    margin-left: auto;  /* Pushes the icon to the right */
+    
+}
+
+.btn-font {
+    font-size: 20px;
+    padding-top: 3px;
+}

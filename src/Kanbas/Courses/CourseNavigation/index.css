@@ -1,0 +1,53 @@
+.account-navigation {
+    width: 100px; 
+}
+
+/* .account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+.account-navigation ul li {
+    margin-bottom: 15px;
+}
+
+.account-navigation ul li a{
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+
+    font-size: 0.9em; /* reduce font size */
+   
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+
+    font-size: 0.9em; /* reduce font size */
+   
+}
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '';
+}
+

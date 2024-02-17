@@ -1,0 +1,70 @@
+
+
+  @media (max-width: 768px) {
+
+    .third {
+        display: block
+      }
+
+
+  }
+  @media (max-width: 480px) {
+
+    .third {
+      display: block;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+
+    .third {
+        grid-column: 2/ -2; 
+      }
+    
+      .fourth {
+        display: none;
+      }
+}
+
+@media (max-width: 800px) {
+
+    .third {
+        grid-column: 2/ -2; 
+      }
+    
+      .fourth {
+        display: none;
+      }
+}
+
+/* When the window is even narrower */
+@media (max-width: 500px) {
+
+    .third {
+        display: block;
+    }
+  
+}
+
+.first {
+    display:block
+}
+
+.first.hidden {
+    display:none
+}
+
+
+.third {
+    grid-column: 2 / -2;
+  }
+
+  .container-fluid {
+    padding: 10px; 
+  }
+  @media (max-width: 768px) {
+    #kanbas-nav, #course-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+[
+    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101", "description": "Week 0 - SETUP - Week starting on Monday September 5th Module","dueDate": "Sep 18, 2022",
+    "points": 100},
+
+    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101", "description": "Week 1 - HTML - Week starting on Monday September 12th Module",
+    "dueDate": "Sep 25, 2022",
+    "points": 100 },
+    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101", "description": "Week 2 - CSS - Week starting on Monday September 12th Module",
+    "dueDate": "Oct 2, 2022",
+    "points": 100 },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102", "description": "Week 3 - Bootstrap - Week starting on Monday September 12th Module",
+    "dueDate": "Oct 10, 2022",
+    "points": 100 },
+    { "_id": "A202", "title": "Flow Analysis", "course": "RS102", "description": "Week 4 - Javascript - Week starting on Monday September 12th Module",
+    "dueDate": "Oct 18, 2022",
+    "points": 100 },
+    { "_id": "A203", "title": "Heating Analysis", "course": "RS102", "description": "Week 5 - React & Routing  - Week starting on Monday September 12th Module",
+    "dueDate": "Oct 23, 2022",
+    "points": 100 },
+
+    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
+    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+    
+      { "_id": "A104", "title": "Rocket Stability Analysis", "course": "RS101", "description": "Week 3 - JS Basics - Week starting on Monday September 19th Module", "dueDate": "Oct 9, 2022", "points": 100 },
+      { "_id": "A105", "title": "Fuel Efficiency Research", "course": "RS104", "description": "Week 4 - DOM Manipulation - Week starting on Monday September 26th Module", "dueDate": "Oct 16, 2022", "points": 100 },
+      { "_id": "A106", "title": "Midterm Project", "course": "RS105", "description": "Midterm project for rocket science basics.", "dueDate": "Nov 1, 2022", "points": 200 },
+      { "_id": "A204", "title": "Aircraft Design Challenge", "course": "RS104", "description": "Week 6 - Redux - Week starting on Monday September 19th Module", "dueDate": "Oct 30, 2022", "points": 150 },
+      { "_id": "A205", "title": "Wind Tunnel Experiment", "course": "RS104", "description": "Week 7 - Backend Development - Week starting on Monday September 26th Module", "dueDate": "Nov 6, 2022", "points": 100 },
+      { "_id": "A206", "title": "Final Exam", "course": "RS105", "description": "Final exam covering all topics in aerodynamics.", "dueDate": "Dec 1, 2022", "points": 200 },
+      { "_id": "A304", "title": "Rocket Launch Simulation", "course": "RS105", "description": "Week 6 - Final Project Preparation - Week starting on Monday September 19th Module", "dueDate": "Nov 1, 2022", "points": 200 },
+      { "_id": "A305", "title": "Satellite Deployment Strategy", "course": "RS106", "description": "Week 7 - Final Project Execution - Week starting on Monday September 26th Module", "dueDate": "Nov 15, 2022", "points": 200 },
+      { "_id": "A306", "title": "Final Project Presentation", "course": "RS107", "description": "Present your final project to the class and faculty.", "dueDate": "Dec 15, 2022", "points": 250 },
+      
+        { "_id": "A401", "title": "Fluid Mechanics Assignment", "course": "RS106", "description": "Week 1 - Introduction to fluid mechanics and its applications.",
+          "dueDate": "Jan 24, 2023", "points": 100 },
+        { "_id": "A402", "title": "Bernoulli's Principle Task", "course": "RS107", "description": "Week 2 - Understanding and applying Bernoulli's principle in real-world scenarios.",
+          "dueDate": "Jan 31, 2023", "points": 100 },
+        { "_id": "A403", "title": "Navier-Stokes Equations", "course": "RS106", "description": "Week 3 - Solving problems using Navier-Stokes equations.",
+          "dueDate": "Feb 7, 2023", "points": 100 },
+      
+        { "_id": "A501", "title": "Heat Transfer Assignment", "course": "RS107", "description": "Week 1 - Basics of heat transfer and its applications.",
+          "dueDate": "Jan 24, 2023", "points": 100 },
+        { "_id": "A502", "title": "Entropy and Thermodynamics", "course": "RS108", "description": "Week 2 - Understanding entropy in thermodynamics.",
+          "dueDate": "Jan 31, 2023", "points": 100 },
+        { "_id": "A503", "title": "Carnot Engine Task", "course": "RS108", "description": "Week 3 - Designing and analyzing a Carnot engine.",
+          "dueDate": "Feb 7, 2023", "points": 100 },
+      
+        { "_id": "A601", "title": "Material Properties Assignment", "course": "RS108", "description": "Week 1 - Studying different material properties and their applications.",
+          "dueDate": "Jan 24, 2023", "points": 100 },
+        { "_id": "A602", "title": "Composite Materials Task", "course": "RS107", "description": "Week 2 - Understanding and working with composite materials.",
+          "dueDate": "Jan 31, 2023", "points": 100 },
+        { "_id": "A603", "title": "Nano-materials in Industry", "course": "RS105", "description": "Week 3 - Exploring the applications of nano-materials in different industries.",
+          "dueDate": "Feb 7, 2023", "points": 100 }
+      
+  ]
+
+

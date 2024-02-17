@@ -1,0 +1,20 @@
+.btn-success {
+    background-color: green;
+   
+}
+
+.btn-secondary {
+    background-color: gray;
+    color: white;
+    margin-right: 5px;
+   
+}
+
+.btn-info {
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-group {
+    margin-right: 5px;
+}

@@ -1,0 +1,48 @@
+
+
+.course-status-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  .status-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .publish-button {
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+  .list-group-item a {
+    color:black;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.fourth ul.list-group {
+    background-color: rgb(211, 211, 211); /* Replace with your desired color, e.g., #f5f5f5 */
+}
+
+.fourth ul.list-group {
+    color:rgb(211, 211, 211); /* Replace with your desired color, e.g., #333 */
+}
+
+.third .container {
+    margin-left: 10px;
+}

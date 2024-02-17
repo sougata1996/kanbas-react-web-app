@@ -1,0 +1,72 @@
+.dashboard-header {
+    text-align:justify;
+    padding: 10px;
+    width: 200px; /* Match the width of the navigation bar */
+}
+
+
+/* Adjust the margin for the content to avoid overlapping with the fixed header and navigation bar */
+.content {
+    margin-left: 500px; /* Adjust the value as needed */
+    margin-top: 30px; /* Add spacing */
+}
+
+.container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.dashboard-hr {
+    margin-bottom: 20px;
+    border: none;
+    height: 1px; /* Adjust the height as needed */
+    background-color: black; /* Color of the horizontal rule */
+}
+
+.card-header {
+    min-height: 146px;  /* Set the desired height value */
+    /* Add any other styles if necessary */
+    color: rgb(23, 123, 99); 
+    opacity: 0.6;
+    background-color: rgb(23, 123, 99);
+}
+
+.published-courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 270px;
+    gap: 30px; /* This ensures there's a gap of 30px between each course */
+    margin-left: -10px; /* Offset for Bootstrap's default margin */
+    margin-right: -15px; /* Offset for Bootstrap's default margin */
+    color:rgb(23, 123, 99);
+}
+.card {
+    width: 250px; /* Set the min-width */
+    max-width: 270px; /* Set the max-width */
+    color:rgb(23, 123, 99);
+    margin: 5x;;
+}
+
+
+
+.published-courses-grid {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);  4 cards in a row */
+    gap: 30px;
+    max-width: 1140px; /* 4 cards x 250px + 3 gaps x 30px */
+}
+
+@media (max-width: 1200px) {
+    .published-courses-grid {
+        grid-template-columns: repeat(3, 1fr);  /* 3 cards in a row */
+    }
+}
+@media (max-width: 900px) {
+    .published-courses-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 cards in a row */
+    }
+}
+
+

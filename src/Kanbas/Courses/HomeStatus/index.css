@@ -1,0 +1,37 @@
+.btn-secondary {
+    background-color: rgb(211, 211, 211);
+    border-color: rgb(211, 211, 211);
+    color: black;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.button-group .btn {
+    background-color: white; /* Default button color */
+    border: 2px solid transparent; /* Transparent border */
+    color: red; /* Text color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect */
+}
+
+.button-group .btn.selected {
+   
+    
+    border-color:black; /* Border color for the selected button */
+    color: black; /* Text color for the selected button */
+    
+    border-radius: 0px;
+}
+
+.text-red, .btnCss {
+    
+    background-color: white;
+    border: 0;
+    font-size: 15px;
+}
+
+.text-red {
+    color: red;
+}
+
