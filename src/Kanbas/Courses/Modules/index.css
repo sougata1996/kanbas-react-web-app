@@ -27,12 +27,41 @@
     cursor: pointer;
   }
   
-
-
-  .list-group-item a {
+.list-group-item a {
     color:black;
     font-style: normal;
     text-decoration: none;
+}
+
+
+.btn-space {
+  margin-right: 10px;
+  padding: 6px 12px;
+ 
+}
+
+textarea,input {
+  /* display: block; */
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px; 
+}
+
+input {
+  display: block;
+  margin-right: 10px;
+  
+}
+
+
+.mod {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px; /* rounded corners */
+  border: 1px solid #e0e0e0;
 }
 
 .fourth ul.list-group {

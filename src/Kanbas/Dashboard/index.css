@@ -42,6 +42,7 @@
     margin-right: -15px; /* Offset for Bootstrap's default margin */
     color:rgb(23, 123, 99);
 }
+
 .card {
     width: 250px; /* Set the min-width */
     max-width: 270px; /* Set the max-width */
@@ -50,12 +51,23 @@
 }
 
 
-
 .published-courses-grid {
     display: grid;
     /* grid-template-columns: repeat(4, 1fr);  4 cards in a row */
     gap: 30px;
     max-width: 1140px; /* 4 cards x 250px + 3 gaps x 30px */
+}
+
+.btn-green {
+    background-color:darkgreen;
+    color: white;
+    font-style: none;
+    
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (max-width: 1200px) {
@@ -69,4 +81,23 @@
     }
 }
 
+.btn {
+    border-radius: 20%;
+}
+
+.course-edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically in the full viewport height */
+}
+
+.course-edit-content {
+    width: 80%; /* Adjust this value as needed */
+    max-width: 100%; /* Prevent the form from becoming too wide on large screens */
+}
+
+.form-control {
+    width: 100%!important; /* Ensure input fields take the full width of their container */
+}
 
