@@ -2,10 +2,25 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addAssignment } from './assignmentsReducer';
 import { useNavigate } from 'react-router';
+import { createAssignment } from './assignmentService';
+import { useParams } from "react-router-dom";
+import db from "../../Database";
+
 
 function CreateAssignment() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    let { courseId } = useParams(); 
+
+    const handleAddAssignment = () => {
+        createAssignment(courseId, assignment).then((assignment) => {
+          dispatch(addAssignment(assignment));
+        });
+      };
+      
+      if(courseId === '*') {
+        courseId = db.assignments[0].course;
+     }
 
     const [assignment, setAssignment] = useState({
         name: '',
@@ -27,15 +42,14 @@ function CreateAssignment() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(addAssignment(assignment));
-        console.log("Submitted assignment:", assignment);
+        handleAddAssignment();
         navigate(-1);
     };
 
     const handleCancel = () => {
         navigate(-1);
     };
-    
+
 
     return (
         <div className="container mt-4">

@@ -1,80 +1,79 @@
+
 .Navigation {
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  color: red;
-  width: 92px;
-  font-size: medium;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    width:92px;
+    font-size:medium;
 }
 
 .Navigation ul {
-  list-style: none;
-  padding: 2px;
-  text-wrap: wrap;
+    list-style: none; 
+    padding: 2px;
+    text-wrap:wrap;
 }
+
 .Navigation ul li .block-container {
-  width: 100%;
-  height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    display: block; 
 }
 
 .Navigation ul li {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-  margin-right: 30px;
-  text-justify: distribute;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    text-justify:distribute;
+    width: 80px;
+    margin-left: 0px;
 }
 
 .Navigation a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 7px 0;
-  transition: background-color 0.3s, color 0.3s;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 7px 0;
+    transition: background-color 0.3s, color 0.3s;
+    width: 80px;
+    margin-left: 0px;
+    
 }
 
 .Navigation ul li.navSelected p,
 .Navigation ul li.navSelected a,
-.Navigation ul li.navSelected,
-.Navigation ul li .block-container:hover p,
-.Navigation ul li .block-container:hover a {
-  color: red;
-  background-color: white;
-  width: 80px;
-  margin-left: 0px;
+.Navigation ul li.navSelected {
+    color :red ;
+    background-color: white;
+    width: 80px;
+    margin-left: 0px;
 }
 
-.Navigation ul li .block-container:hover {
-  background-color: white;
-  color: red;
-}
-
-.Navigation ul li .block-container:hover p,
-.Navigation ul li .block-container:hover a {
-  color: red; /* Change the text color to red when the block is hovered */
-}
 
 .sandwich-icon {
-  display: none;
+    display: none;
 }
 
 .navigation-container.hidden {
-  display: none;
-}
-
-@media (max-width: 500px) {
-  .sandwich-icon {
-    display: block;
-  }
-}
-
-@media (max-width: 500px) {
-  .navigation-container,
-  .fourth {
     display: none;
   }
-  .third {
-    display: block;
+
+@media (max-width: 500px) {
+
+    .sandwich-icon {
+        display: block;
+      }
   }
+
+
+  @media (max-width: 500px) {
+    .navigation-container,.fourth {
+        display: none;
+    }
+    .third {
+        display: block;
+    }
+  
 }
+
