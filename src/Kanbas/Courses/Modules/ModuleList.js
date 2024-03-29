@@ -3,60 +3,59 @@ import { useParams } from "react-router-dom";
 import db from "../../Database";
 import './index.css';
 import { useSelector, useDispatch } from "react-redux";
-import { addModule, deleteModule, updateModule, setModule,resetModule } from './modulesReducer';
+import { addModule, deleteModule, updateModule, setModule,resetModule, setModules } from './modulesReducer';
 import { Button } from "react-bootstrap";
+import { useEffect } from "react";
+import { findModulesForCourse , createModule} from "./client";
+import * as client from "./client";
 
 export let courseId;
 
-
 function ModuleList() {
-  let { courseId } = useParams();
- 
+let { courseId } = useParams(); 
 const modules = useSelector((state) => state.modulesReducer.modules);
 const module = useSelector((state) => state.modulesReducer.module);
-console.log("modules", modules);
 const dispatch = useDispatch();
-
-  // const [module, setModule] = useState({
-  //   name: "New Module",
-  //   description: "New Description",
-  //   course: courseId,
-  // });
-
-  // const updateModule = () => {
-  //   setModules(
-  //     modules.map((m) => {
-  //       if (m._id === module._id) {
-  //         return module;
-  //       } else {
-  //         return m;
-  //       }
-  //     })
-  //   );
-  // }
-
-
-  // const deleteModule = (moduleId) => {
-  //   setModules(modules.filter(
-  //     (module) => module._id !== moduleId));
-  // };
-
-
-  // const addModule = (module) => {
-  //   setModules([
-  //     ...modules,
-  //     { ...module, _id: new Date().getTime().toString() },
-        
-  //   ]);
-  // };
-
 
   if(courseId === '*') {
      courseId = db.modules[0].course;
   }
 
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then(() => {
+      dispatch(deleteModule(moduleId));
+      dispatch(resetModule());
+    });
+  };
+
+  const handleUpdateModule = async () => {
+     await client.updateModule(module);
+    dispatch(updateModule(module));
+    
+  };
+
+
+
+  const handleAddModule = () => {
+    createModule(courseId, module)
+      .then((module) => {
+        dispatch(addModule(module));
+      })
+      .catch((error) => {
+        // Handle error, e.g., log it or display a message to the user
+        console.error("Error adding module:", error);
+      });
+  };
+
+
 // modules = db.modules.filter((module) => module.course === courseId);
-  
+useEffect(() => {
+  findModulesForCourse(courseId)
+    .then((modules) =>
+      dispatch(setModules(modules))
+  );
+}, [courseId, dispatch]);
+
  
   return (
       <div className="container mt-5">
@@ -76,12 +75,10 @@ const dispatch = useDispatch();
                         </div> */}
   <ul className="list-group mod">
       <li className="list-group-item">
-        <Button  className="btn-space" onClick={() =>{ dispatch(addModule({ ...module, course: courseId }));
-      dispatch(resetModule());}}>Add</Button>
-        <button className="btn btn-primary btn-space" onClick={() => {dispatch(updateModule(module));
-        dispatch(resetModule());}}>
+        <Button  className="btn-space" onClick={() => handleAddModule()}>Add</Button>
+        <Button className="btn btn-primary btn-space" onClick={() => handleUpdateModule()}>
                 Update
-        </button>
+        </Button>
         <input value={module.name}
           onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
         />
@@ -104,7 +101,7 @@ const dispatch = useDispatch();
             </button>
 
            <button className="btn btn-danger btn-space"
-              onClick={() => dispatch(deleteModule(module._id))}>
+               onClick={() => handleDeleteModule(module._id)}>
               Delete
             </button>
 

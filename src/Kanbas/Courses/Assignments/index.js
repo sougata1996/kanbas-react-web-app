@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useParams } from "react-router-dom";
 import db from "../../Database";
 import './index.css';
@@ -9,23 +9,32 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {useDispatch } from "react-redux";
-import { deleteAssignment } from "./assignmentsReducer";
+import { deleteAssignment, setAssignments } from "./assignmentsReducer";
+import {findAssignmentsForCourse} from './assignmentService';
+import * as client from "./assignmentService";
 
 function Assignments() {
   const dispatch = useDispatch();
   let { courseId } = useParams();
+  
+
+
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
     navigate("CreateAssignment");
   };
 
-  const handleDelete = (assignmentId) => {
+  const handleDeleteAssignment = (assignmentId) => {
     const confirmation = window.confirm("Are you sure you want to remove this assignment?");
     if (confirmation) {
-        dispatch(deleteAssignment(assignmentId)); // Assuming you have a deleteAssignment action
+        client.deleteAssignment(assignmentId).then(() => {
+        dispatch(deleteAssignment(assignmentId));
+      });
     }
 };
+
+
 
 
 if (courseId === '*') {
@@ -36,9 +45,16 @@ if (courseId === '*') {
   // const assignment = useSelector((state) => state.assignmentsReducer.assignment);
   
 
-   const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId
-  );
+  //  const courseAssignments = assignments.filter(
+  //   (assignment) => assignment.course === courseId
+  // );
+
+  useEffect(() => {
+    findAssignmentsForCourse(courseId)
+      .then((assignments) =>
+        dispatch(setAssignments(assignments))
+    );
+  }, [courseId, dispatch]);
   
   return (
     <div className="col-8">
@@ -62,7 +78,7 @@ if (courseId === '*') {
        
         
         <ul className="list-group">
-          {courseAssignments
+          {assignments
           .map((assignment) => ( 
             <div className="list-group-item green-border-left">
             <div className=" d-flex align-items-center" >
@@ -79,7 +95,7 @@ if (courseId === '*') {
               
               </Link>
               <FontAwesomeIcon icon={faCheck} className="checkmark-icon " />
-                <button className="btn btn-danger" onClick={(event) =>{event.preventDefault(); handleDelete(assignment._id)}}>Delete</button>
+                <button className="btn btn-danger" onClick={() =>{handleDeleteAssignment(assignment._id)}}>Delete</button>
               <button className="btn btn-font mr-2">:</button>
               </div>
              </div>
