@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/9512067f90.js" crossorigin="anonymous"></script>
+    <link href="courseCSS.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav aria-label="breadcrumb" class="custom-breadcrumb ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><i class="fas fa-bars"></i></li>
+            <li class="breadcrumb-item">Course Name</li>
+            <li class="breadcrumb-item">Term</li>
+            <li class="breadcrumb-item section-crumb">Section</li>
+            <li class="breadcrumb-item active " aria-current="page">Home</li>
+            
+        </ol>
+        <hr class="my-1">
+        
+      </nav>
+
+
+
+    
+    <div class="container-fluid">
+
+        <div class="row">
+            
+            <!-- Kansas Navigation Bar -->
+            <div class="column col-1 first" id="kanbas-nav">
+
+                <!-- Your Kansas Navbar content here -->
+                <div class="Navigation">
+                    <ul>
+                        <div class="link-container">
+                            <li>
+                                <div class="block-container">
+                                    <p>
+                                        <i class="fa-regular fa-user" id="custom-user"></i><br>
+                                        <a href="../profile/index.html">Account</a>
+                                    </p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                    <p>
+                                        <i class="fa-solid fa-gauge" id="custom-board"></i> <br>
+                                        <a href="../dashboard.html">Dashboard</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="navSelected">
+                                <div class="block-container">
+                                    <p>
+                                        <i class="fa-solid fa-book" id="custom-book"></i>
+                                        <br>
+                                        <a href="home.html">Courses</a>
+                                    </p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                <p><i class="fa-solid fa-calendar-days" id="custom-calendar"> </i><br>
+                                <a href="#">Calendar</a>
+                            </p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                <p><i class="fa-solid fa-inbox" id="custom-icon"></i> <br>
+                                <a href="#">Inbox</a></p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                <p><i class="fa-regular fa-clock" id="custom-clock"> </i> <br>
+                                <a href="#">History</a></p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                    <p><i class="fa-solid fa-tv" id="custom-studio"></i> <br>
+                                <a href="#">Studio</a>
+                                    </p>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="block-container">
+                                    <p><i class="fa-solid fa-right-from-bracket" id="custom-common"></i><br>
+                                <a href="#">Commons</a>
+                                    </p>
+                                </div>
+                            </li>
+                            </p>
+                            <li>
+                                <div class="block-container">
+                                <p><i class="fa-solid fa-circle-question" id="custom-help"></i>
+                                <br> <a href="#">Help</a></p>
+                                </div>
+                            </li>
+                        </div>
+    
+                    </ul>
+                </div>
+                <button id="course-close" class="close-button">X</button>
+            </div>
+
+            <!-- Breadcrumbs and Sidebar -->
+            <div class="column col-2 second" id="course-nav">
+                
+                <!-- Sidebar (Account Navigation) -->
+                <div class="account-navigation">
+                    <ul style="list-style-type: none; padding: 0;">
+                        <!-- ... rest of your account navigation links ... -->
+                       
+                                <li class="selected"><a href="home.html">Home</a></li>
+                                <li><a href="#">Modules</a></li>
+                                <li><a href="#">Piazza</a></li>
+                                <li><a href="#">Zoom Meetings</a></li>
+                                <li><a href="../assignments/index.html">Assignments</a></li>
+                                <li><a href="#">Quizzes</a></li>
+                                <li><a href="grades.html">Grades</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">Panopto Video</a></li>
+                                <li><a href="#">Discussions</a></li>
+                                <li><a href="#">Announcements</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Files</a></li>
+                                <li><a href="#">Rubrics</a></li>
+                                <li><a href="#">Outcomes</a></li>
+                                <li><a href="#">Collaborations</a></li>
+                                <li><a href="#">Syllabus</a></li>
+                                <li><a href="courseDetails.html">Settings</a></li>
+                            </ul>
+                            <button id="course-close" class="close-button">X</button>
+                        </div>
+            </div>
+
+            <!-- Weeks -->
+            <div class="column col-6 third">
+                <!-- Your Weeks content here -->
+                <div class="container mt-5">
+                    
+                    <button class="btn btn-secondary float-end ms-2">Collapse All</button>
+                    <button class="btn btn-secondary float-end ">View Progress</button>
+                    <button class="btn btn-danger float-end ">Module</button>
+                        <button class="btn btn-secondary dropdown-toggle float-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Publish All
+                        </button>
+                        <div class="clearfix"></div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     
+                
+                    <!-- Module 1 -->
+                    <div class="list-group mt-3">
+                        <div class="list-group-item list-group-item-secondary">
+                            Week 0 -Introduction to the course 
+
+                        </div>
+                        <div class="list-group-item">Learning Objectives <i class="fas fa-check float-end "></i></div>
+                        <div class="list-group-item pl-5">Introduction to the course <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Learn What is Web Dev <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Creating a development environment <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Creating a Web Application <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Getting started with the 1st assignment <i class="fas fa-check float-end"></i></div>
+
+                        <div class="list-group-item">Reading <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Full Stack Developer-Chapter 1-Introduction <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Full Stack Developer-Chapter 2-Creating
+                            User Interfaces With HTML <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item">Slides <i class="fas fa-check float-end"></i></div>
+                        <a href="#" class="list-group-item pl-5 text-red"><i class="fa-solid fa-link"></i>Introduction to Web Development <i class="fas fa-check float-end"></i></a>
+                        <a href="#" class="list-group-item pl-5 text-red"><i class="fa-solid fa-link"></i>Creating an HTTP server with Node.j <i class="fas fa-check float-end"></i></a>
+                        <a href="#" class="list-group-item pl-5 text-red"><i class="fa-solid fa-link"></i>Creating a React application <i class="fas fa-check float-end"></i></a>
+                    </div>
+                
+
+       
+                    <!-- Module 2 -->
+                    <div class="list-group mt-3">
+                        <div class="list-group-item list-group-item-secondary">
+                            Week 1-HTML 
+                            
+                        </div>
+                        <div class="list-group-item">Learning Outcomes <i class="fas fa-check float-end "></i></div>
+                        <div class="list-group-item pl-5">Learn how to create user interfaces with HTML <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Keep working on assignment 1 <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Deploy the assignment to Netlify <i class="fas fa-check float-end"></i></div>
+                
+
+                        <div class="list-group-item">Reading <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Full Stack Developer-Chapter 1-Introduction <i class="fas fa-check float-end"></i></div>
+                        <div class="list-group-item pl-5">Full Stack Developer-Chapter 2-Creating
+                            User Interfaces With HTML <i class="fas fa-check float-end"></i></div>
+
+                        <div class="list-group-item">Slides <i class="fas fa-check float-end"></i></div>
+                        <a href="#" class="list-group-item pl-5 text-red"><i class="fa-solid fa-link"></i>Learn ReactJS <i class="fas fa-check float-end"></i></a>
+                        <a href="#" class="list-group-item pl-5 text-red"><i class="fa-solid fa-link"></i>Deploy website<i class="fas fa-check float-end"></i></a>
+                        
+                    </div>
+                
+                    <!-- Publish All Dropdown -->
+                    
+                </div>
+            </div>
+            
+            <!-- Rightmost Column (Course Status, Coming Up, etc.) -->
+            <div class="column col-2 fourth">
+                <!-- Course Status -->
+                <h2 class="mt-4">Course Status</h2>
+                <div class="mb-3 row">
+                    <div class="col">
+                        <button class="btn btn-secondary">Unpublished</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success">Published</button>
+                    </div>
+                </div>
+                
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><a href="#">Importing Existing content</a></li>
+                    <li class="list-group-item"><a href="#">Import from Commons</a></li>
+                    <li class="list-group-item"><a href="#">Choose from Home Page</a></li>
+                    <li class="list-group-item"><a href="#">View Course Stream</a></li>
+                    <li class="list-group-item"><a href="#">New Announcement</a></li>
+                    <li class="list-group-item"><a href="#">New Analytics</a></li>
+                    <li class="list-group-item"><a href="#">View Course Notifications</a></li>
+                </ul>
+            
+                <!-- Coming Up -->
+                <h2 class="mt-4">Coming Up</h2>
+                <a class="text-red mb-3 d-block" href="#">View Calendar</a>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a class="text-red" href="#">Lecture CS5610 Sep7 at 11:45 am</a></li>
+                    <li class="mb-1"><a class="text-red" href="#">Lecture CS4550 Sep 11 at 11:45 am</a></li>
+                    <li class="mb-1"><a class="text-red" href="#">Lecture CS5610 Sep 11 at 6 pm</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <button class="btn btn-primary d-block d-md-none" id="kanbas-toggler">☰</button>
+    <button class="btn btn-primary d-block d-md-none" id="course-toggler">»</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+// Toggle the Kansas Navigation Bar
+// Toggle the Kansas Navigation Bar
+$(document).ready(function() {
+    // Toggle Kanbas Navigation
+    $("#kanbas-toggler").click(function() {
+        $("#kanbas-nav").toggle();  // Use toggle() to hide/show
+        $("#course-nav").hide();    // Hide other nav if open
+    });
+
+    $("#kanbas-close").click(function() {
+        $("#kanbas-nav").hide();
+    });
+
+    // Toggle Course Navigation
+    $("#course-toggler").click(function() {
+        $("#course-nav").toggle();  // Use toggle() to hide/show
+        $("#kanbas-nav").hide();    // Hide other nav if open
+    });
+
+    $("#course-close").click(function() {
+    $("#course-nav").hide();
+});
+
+});
+
+</script>
+
+</body>
+
+</html>

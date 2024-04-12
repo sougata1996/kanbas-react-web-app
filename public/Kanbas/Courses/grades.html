@@ -1,0 +1,221 @@
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>Kanbas Grades</title>
+      <script src="https://kit.fontawesome.com/9512067f90.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="courseCSS.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+  
+    <nav aria-label="breadcrumb" class="custom-breadcrumb ">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><i class="fas fa-bars"></i></li>
+          <li class="breadcrumb-item">Course Name</li>
+          <li class="breadcrumb-item">Term</li>
+          <li class="breadcrumb-item section-crumb">Section</li>
+          <li class="breadcrumb-item active " aria-current="page">Grades</li>
+          
+          
+      </ol>
+      <hr class="my-1">
+      
+  </nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-1 Navigation">
+          <div class="link-container">
+              <!-- ... (left Navigation content unchanged) ... -->
+
+                  <ul>
+                      <li>
+                          <div class="block-container">
+                          <p><i class="fa-regular fa-user" id="custom-user"></i><br>
+                          <a href="../profile/index.html">Account</a></p>
+                      </div>
+                      </li>
+  
+                      <li><div class="block-container"> <p><i class="fa-solid fa-gauge" id="custom-board"></i> <br>
+                          <a href="../dashboard.html">Dashboard</a></p></div></li>
+  
+                      <li class="navSelected">
+                          <div class="block-container"><p><i class="fa-solid fa-book" id="custom-book"></i>
+                          <br>
+                          <a href="home.html">Courses</a>
+                      </p>
+                  </div>
+                  </li>
+  
+                      <li><div class="block-container">
+                          <p><i class="fa-solid fa-calendar-days" id="custom-calendar"> </i><br>
+                          <a href="#">Calendar</a>
+                      </p></div></li>
+  
+                      <li><div class="block-container"><p><i class="fa-solid fa-inbox" id="custom-icon"></i> <br>
+                          <a href="#">Inbox</a></p></div></li>
+  
+                      <li><div class="block-container"><p><i class="fa-regular fa-clock" id="custom-clock"> </i> <br>
+                          <a href="#">History</a></p></div></li>
+  
+                      <li><div class="block-container"><p><i class="fa-solid fa-tv" id="custom-studio"></i> <br>
+                          <a href="#">Studio</a></div></li>
+  
+                      <li><div class="block-container"><p><i class="fa-solid fa-right-from-bracket" id="custom-common"></i><br>
+                          <a href="#">Commons</a></div></li>
+                      </p>
+                      <li><div class="block-container"><p><i class="fa-solid fa-circle-question" id="custom-help"></i>
+                          <br> <a href="#">Help</a></p></div>
+                      </li>
+                      </ul>
+          </div>
+      </div>
+      <div class="col-2 account-navigation">
+              
+          <ul class="list-group">
+              <!-- ... (account navigation content unchanged) ... -->
+          
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="#">Modules</a></li>
+                      <li><a href="#">Piazza</a></li>
+                      <li><a href="#">Zoom Meetings</a></li>
+                      <li ><a href="../assignments/index.html">Assignments</a></li>
+                      <li><a href="#">Quizzes</a></li>
+                      <li class="selected"><a href="grades.html">Grades</a></li>
+                      <li><a href="#">People</a></li>
+                      <li><a href="#">Panopto Video</a></li>
+                      <li><a href="#">Discussions</a></li>
+                      <li><a href="#">Announcements</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Files</a></li>
+                      <li><a href="#">Rubrics</a></li>
+                      <li><a href="#">Outcomes</a></li>
+                      <li><a href="#">Collaborations</a></li>
+                      <li><a href="#">Syllabus</a></li>
+                      <li><a href="courseDetails.html">Settings</a></li>
+  
+          </ul>
+      </div>
+
+      <div class="col-8">
+      
+          <!-- Gradebook and other Buttons -->
+          <div class="d-flex mb-2 float-right">
+        
+              <button class="btn btn-secondary mr-2"><i class="fas fa-file-import"></i> Import</button>
+              <div class="btn-group">
+                  <button class="btn btn-success"><i class="fas fa-file-export"></i> Export</button>
+                  <button class="btn btn-success dropdown-toggle mr-2" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Option 1</a>
+                      <a class="dropdown-item" href="#">Option 2</a>
+                      <!-- Add more options as needed -->
+                  </div>
+              </div>
+              <button class="btn btn-info "><i class="fa-solid fa-gear"></i></button>
+          </div>
+          <br>
+          <br>
+          <br>
+
+          <!-- Student and Assignment Search Bars -->
+          <div class="row mb-3">
+              <div class="col">
+                  <h4>Student Names</h4>
+                  <input type="text" class="form-control" placeholder="Search Students">
+              </div>
+              <div class="col">
+                  <h4>Assignment Names</h4>
+                  <input type="text" class="form-control" placeholder="Search Assignments">
+              </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+                <button class="btn btn-primary"><i class="fas fa-filter"></i> Apply Filters</button>
+            </div>
+        </div>
+
+          <!-- Grades Table -->
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Student Name</th>
+                          <th>A1 SETUP Out of 100</th>
+                          <th>A2 HTML Out of 100</th>
+                          <th>A3 CSS Out of 100</th>
+                          <th>A4 BOOTSTRAP Out of 100</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Alica Wonder</td>
+                          <td><input type="text" class="form-control" value="98"></td>
+                          <td>92</td>
+                          <td>87</td>
+                          <td>96</td>
+                      </tr>
+                      <tr>
+                        <td>Joe Doe</td>
+                        <td>98</td>
+                        <td><input type="text" class="form-control" value="92"></td>
+                        <td>87</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <td>Mika Christian</td>
+                        <td><input type="text" class="form-control" value="20"></td>
+                        <td>95</td>
+                        <td>82</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>Sabastian Shah</td>
+                        <td><input type="text" class="form-control" value="2"></td>
+                        <td>92</td>
+                        <td>87</td>
+                        <td>96</td>
+                      </tr>
+                      <tr>
+                        <td>Adrain Brook</td>
+                        <td>45</td>
+                        <td>92</td>
+                        <td>87</td>
+                        <td>93</td>
+                      </tr>
+                      <tr>
+                        <td>Cookie Kiki</td>
+                        <td><input type="text" class="form-control" value="98"></td>
+                        <td>29</td>
+                        <td>36</td>
+                        <td>58</td>
+                      </tr>
+                      <tr>
+                        <td>Ian Wonder</td>
+                        <td><input type="text" class="form-control" value="56"></td>
+                        <td>92</td>
+                        <td>23</td>
+                        <td>96</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+  </div>
+      </div>
+      </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  </body>
+  
+  </html>
+  

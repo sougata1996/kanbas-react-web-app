@@ -1,0 +1,1521 @@
+
+
+#custom-calendar {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+
+#custom-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-book {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-board {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-clock {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-studio {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-common {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-help {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-user {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: gray;
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 83px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+   
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-container p {
+    text-align: center;
+    font-size: 10px; /* Adjust font size as needed */
+}
+
+.block-container i {
+    font-size: 22px; /* Adjust icon size as needed */
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+   
+    font-size: 0.9em; /* reduce font size */
+   
+}
+
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+ 
+    font-size: 0.9em; /* reduce font size */
+   
+}
+.parent-element-class {
+    width: 100%; /* or a specific pixel value that fits your design */
+}
+
+.text-red {
+    color: red;
+    text-decoration: none;
+}
+
+.text-red:hover {
+    color: darkred;
+    text-decoration: none;
+}
+
+.btn-success {
+    background-color: green;
+}
+
+.btn-secondary {
+    background-color: gray;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+.fa-check {
+    color: green;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '';
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 72px;
+    border-radius: 5px;
+    
+}
+
+.table-layout {
+    display: table;
+    width: 100%;
+  }
+  .table-row {
+    display: table-row;
+  }
+  .table-cell {
+    display: table-cell;
+    padding: 10px;
+  }
+
+  
+
+
+
+
+/* Base style assumes all columns are visible with equal width */
+
+/* If window narrows below threshold (e.g., 600px) */
+
+
+
+#sandwichIcon, #chevronIcon {
+    display: none;
+}
+
+/* Hide the last column when screen narrows below a certain threshold */
+@media (max-width: 1200px) {
+    #buttonsLinks {
+        display: none;
+    }
+    #modules {
+        grid-column-end: span 2;
+    }
+}
+
+/* Hide first and second columns when screen narrows even further */
+@media (max-width: 800px) {
+    #kanbasNavigation, #courseNavigation {
+        display: none;
+    }
+    #modules {
+        grid-column-end: span 4;
+    }
+    #sandwichIcon, #chevronIcon {
+        display: block;
+    }
+}
+
+
+.fa-bars {
+    font-size: 25px;
+    color: red;
+}
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
+.custom-width {
+    width: 150px !important;  /* Use !important to override any existing styles if necessary */
+}
+
+
+
+#custom-calendar {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+
+#custom-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-book {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-board {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-clock {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-studio {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-common {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-help {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-user {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: gray;
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: -63px;
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+.profile-pic {
+    margin-bottom: 200px;
+}
+
+.edit-button {
+    margin-bottom: 600px;
+}
+
+
+.edit-button {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Style the Edit Profile button and its icon */
+.edit-profile-link {
+    text-decoration: none;
+    font-family: serif;
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+
+}
+
+/* Style the Edit Profile icon */
+.fa-solid.fa-pencil {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+#cancelButton {
+    margin-bottom: 800px;
+}
+
+.btn-red-bg {
+    background-color: red;
+    color: white; /* You can also adjust the text color */
+  }
+
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 72px;
+    border-radius: 5px;
+    
+}
+
+
+  .Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.custom-breadcrumb {
+    padding-left: calc(250px - 7rem);  /* Assuming your sidebar is 240px wide; adjust as needed */
+}
+
+
+
+.fa-bars {
+    font-size: 25px;
+    color: red;
+}
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
+.custom-width {
+    width: 150px !important;  /* Use !important to override any existing styles if necessary */
+}
+
+.fa-file-lines {
+    color: green;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.button-group .btn {
+    background-color: white; /* Default button color */
+    border: 2px solid transparent; /* Transparent border */
+    color: red; /* Text color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect */
+}
+
+.button-group .btn.selected {
+   
+    
+    border-color:black; /* Border color for the selected button */
+    color: black; /* Text color for the selected button */
+    
+    border-radius: 0px;
+}
+
+.btn-line {
+   
+    
+    width: 100%; /* Line spans the full width */
+    background-color: black; /* Default line color */
+   
+}
+
+/* Custom CSS for the course details section */
+.course-details {
+    padding: 20px;
+    
+}
+
+.course-details label {
+    font-weight: bold;
+}
+
+.course-details select,
+.course-details input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.course-details textarea {
+    width: 100%;
+}
+
+.course-card {
+    padding: 15px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card:hover {
+    background-color: #e0e0e0;
+}
+
+.hidden-course {
+    display: none;
+}
+
+/* Styling for the dropped areas */
+.course-dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+
+
+#custom-calendar {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+
+#custom-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-book {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-board {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-clock {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-studio {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-common {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-help {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-user {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: gray;
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+.profile-pic {
+    margin-bottom: 200px;
+}
+
+.edit-button {
+    margin-bottom: 1000px;
+}
+
+
+.edit-button {
+    text-align: center; /* Center the content horizontally */
+   
+}
+
+/* Style the Edit Profile button and its icon */
+.edit-profile-link {
+    text-decoration: none;
+    font-family: serif;
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+
+}
+
+/* Style the Edit Profile icon */
+.fa-solid.fa-pencil {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+#cancelButton {
+    margin-bottom: 800px;
+}
+
+.btn-red-bg {
+    background-color: red;
+    color: white; /* You can also adjust the text color */
+  }
+
+
+
+
+
+
+
+#custom-calendar {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+
+#custom-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-book {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-board {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-clock {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-studio {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-common {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-help {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-user {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: gray;
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 83px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+   
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-container p {
+    text-align: center;
+    font-size: 10px; /* Adjust font size as needed */
+}
+
+.block-container i {
+    font-size: 22px; /* Adjust icon size as needed */
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+.breadcrumb li {
+    margin-right: 5px; /* adjust as needed */
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+.parent-element-class {
+    width: 100%; /* or a specific pixel value that fits your design */
+}
+
+.text-red {
+    color: red;
+    text-decoration: none;
+}
+
+.text-red:hover {
+    color: darkred;
+    text-decoration: none;
+}
+
+.btn-success {
+    background-color: green;
+}
+
+.btn-secondary {
+    background-color: gray;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+.fa-check {
+    color: green;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '';
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 72px;
+    border-radius: 5px;
+    
+}
+
+.table-layout {
+    display: table;
+    width: 100%;
+  }
+  .table-row {
+    display: table-row;
+  }
+  .table-cell {
+    display: table-cell;
+    padding: 10px;
+  }
+
+  .breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+.breadcrumb li {
+    margin-right: 5px; /* adjust as needed */
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+
+
+/* Base style assumes all columns are visible with equal width */
+
+/* If window narrows below threshold (e.g., 600px) */
+
+
+
+#sandwichIcon, #chevronIcon {
+    display: none;
+}
+
+/* Hide the last column when screen narrows below a certain threshold */
+@media (max-width: 1200px) {
+    #buttonsLinks {
+        display: none;
+    }
+    #modules {
+        grid-column-end: span 2;
+    }
+}
+
+/* Hide first and second columns when screen narrows even further */
+@media (max-width: 800px) {
+    #kanbasNavigation, #courseNavigation {
+        display: none;
+    }
+    #modules {
+        grid-column-end: span 4;
+    }
+    #sandwichIcon, #chevronIcon {
+        display: block;
+    }
+}
+
+
+.fa-bars {
+    font-size: 25px;
+    color: red;
+}
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
+.custom-width {
+    width: 150px !important;  /* Use !important to override any existing styles if necessary */
+}
+
+
+
+#custom-calendar {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+
+#custom-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-book {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-board {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-clock {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-studio {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-common {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-help {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;     /* Change the color to red */
+}
+
+#custom-user {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: gray;
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: -63px;
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+.profile-pic {
+    margin-bottom: 200px;
+}
+
+.edit-button {
+    margin-bottom: 600px;
+}
+
+
+.edit-button {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Style the Edit Profile button and its icon */
+.edit-profile-link {
+    text-decoration: none;
+    font-family: serif;
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+
+}
+
+/* Style the Edit Profile icon */
+.fa-solid.fa-pencil {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+#cancelButton {
+    margin-bottom: 800px;
+}
+
+.btn-red-bg {
+    background-color: red;
+    color: white; /* You can also adjust the text color */
+  }
+
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 72px;
+    border-radius: 5px;
+    
+}
+
+
+  .Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.custom-breadcrumb {
+    padding-left: calc(250px - 7rem);  /* Assuming your sidebar is 240px wide; adjust as needed */
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+.breadcrumb li {
+    margin-right: 5px; /* adjust as needed */
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: red;
+}
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
+.custom-width {
+    width: 150px !important;  /* Use !important to override any existing styles if necessary */
+}
+
+.fa-file-lines {
+    color: green;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.button-group .btn {
+    background-color: white; /* Default button color */
+    border: 2px solid transparent; /* Transparent border */
+    color: red; /* Text color */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect */
+}
+
+.button-group .btn.selected {
+   
+    
+    border-color:black; /* Border color for the selected button */
+    color: black; /* Text color for the selected button */
+    
+    border-radius: 0px;
+}
+
+.btn-line {
+   
+    
+    width: 100%; /* Line spans the full width */
+    background-color: black; /* Default line color */
+   
+}
+
+/* Custom CSS for the course details section */
+.course-details {
+    padding: 20px;
+    
+}
+
+.course-details label {
+    font-weight: bold;
+}
+
+.course-details select,
+.course-details input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.course-details textarea {
+    width: 100%;
+}
+
+.course-card {
+    padding: 15px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card:hover {
+    background-color: #e0e0e0;
+}
+
+.hidden-course {
+    display: none;
+}
+
+/* Styling for the dropped areas */
+.course-dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Media Query to hide the last column when the window narrows below 800px (change as per your needs) */
+/* When the window is narrow */
+@media (max-width: 800px) {
+
+    .third {
+        grid-column: 2/ -2; 
+      }
+    
+      .fourth {
+        display: none;
+      }
+}
+
+/* When the window is even narrower */
+@media (max-width: 500px) {
+    .first, .second, .fourth {
+        display: none;
+    }
+    .third {
+        grid-column: 4/-4;
+    }
+  
+}
+
+
+.first, 
+.second {
+  width: 2300px;
+}
+
+.third {
+    grid-column: 2 / -2;
+  }
+
+  .container-fluid {
+    padding: 10px; 
+  }
+  @media (max-width: 768px) {
+    #kanbas-nav, #course-nav {
+        display: none;
+    }
+}

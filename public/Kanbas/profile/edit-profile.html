@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User Profile</title>
+   
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="profileCSS.css"
+  rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<script src="https://kit.fontawesome.com/9512067f90.js" crossorigin="anonymous"></script>
+</body>
+<nav aria-label="breadcrumb" class="custom-breadcrumb ">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><i class="fas fa-bars"></i></li>
+      <li class="breadcrumb-item">KAUSHA TRIVEDI'S</li>
+      <li class="breadcrumb-item">PROFILE</li>
+
+  </ol>
+  <hr class="my-1">
+  
+</nav>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-1 Navigation">
+      <div class="link-container">
+          <!-- ... (left Navigation content unchanged) ... -->
+
+              <ul>
+                  <li class="navSelected">
+                      <div class="block-container">
+                      <p><i class="fa-regular fa-user" id="custom-user"></i><br>
+                      <a href="index.html">Account</a></p>
+                  </div>
+                  </li>
+
+                  <li><div class="block-container"> <p><i class="fa-solid fa-gauge" id="custom-board"></i> <br>
+                      <a href="../dashboard.html">Dashboard</a></p></div></li>
+
+                  <li >
+                      <div class="block-container"><p><i class="fa-solid fa-book" id="custom-book"></i>
+                      <br>
+                      <a href="../courses/home.html">Courses</a>
+                  </p>
+              </div>
+              </li>
+
+                  <li><div class="block-container">
+                      <p><i class="fa-solid fa-calendar-days" id="custom-calendar"> </i><br>
+                      <a href="#">Calendar</a>
+                  </p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-inbox" id="custom-icon"></i> <br>
+                      <a href="#">Inbox</a></p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-regular fa-clock" id="custom-clock"> </i> <br>
+                      <a href="#">History</a></p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-tv" id="custom-studio"></i> <br>
+                      <a href="#">Studio</a></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-right-from-bracket" id="custom-common"></i><br>
+                      <a href="#">Commons</a></div></li>
+                  </p>
+                  <li><div class="block-container"><p><i class="fa-solid fa-circle-question" id="custom-help"></i>
+                      <br> <a href="#">Help</a></p></div>
+                  </li>
+                  </ul>
+      </div>
+  </div>
+  <div class="col-2 account-navigation">
+          
+      <ul class="list-group">
+
+  
+
+                  <li><a href="#">Notifications</a></li>
+                          <li class="selected"><a href="index.html">Profile</a></li>
+                          <li><a href="#">Files</a></li>
+                          <li><a href="#">Settings</a></li>
+                          <li><a href="#">ePortfolios</a></li>
+                          <li><a href="#">Shared Content</a></li>
+                          <li><a href="#">The Hub</a></li>
+                          <li><a href="#">Qwickly Course Tools</a></li>
+                          <li><a href="#">Global Announcements</a></li>
+                      </ul>
+  
+
+   
+  </div>
+
+  <div class="col-8">
+    <div class="d-flex justify-content-start align-items-start">
+      <div class="profile-pic flex-grow-1">
+          <i class="fa fa-user" id="custom-pic" aria-hidden="true"></i>
+          <h2>Kausha Trivedi</h2>
+
+          <form>
+            <div class="form-group">
+                <label for="name">Name:* </label>
+                <input type="text" class="form-control" id="name" value="Kausha Trivedi">
+            </div>
+        
+            <div class="form-group">
+                <label for="pronouns">Pronouns</label>
+                <select class="form-control" id="pronouns">
+                    <option selected value="none">None</option>
+                    <!-- Add other pronoun options as needed -->
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+        
+            <h3>Contact</h3>
+            <p>No registered services, you can add some on the settings page.</p>
+        
+            <h4>Biography</h4>
+            <textarea class="form-control" rows="5">MSCS Student@ NEU</textarea>
+        
+            <h4>Links</h4>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="linkTitle">Title</label>
+                    <input type="text" class="form-control" id="linkTitle" value="Youtube">
+                </div>
+                <div class="col-sm-2 d-flex align-items-center justify-content-center">
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="col-sm-5">
+                    <label for="linkUrl">URL</label>
+                    <input type="text" class="form-control" id="linkUrl" value="https://youtube.com">
+                </div>
+            </div>
+        
+            <button type="button" class="btn btn-primary mb-3" id="addLink">Add Another Link</button>
+        
+            <div class="form-group row">
+              <div class="col-sm-10 text-right">
+                  <a href="index.html" class="btn btn-primary" style="width: 120px;">Cancel</a>
+                  <a href="index.html" class="btn btn-secondary btn-red-bg" style="width: 150px; margin-left: 10px;">
+                      <i class="fas fa-save"></i> Save Profile
+                  </a>
+              </div>
+          </div>
+        </form>
+        
+  </div>
+  
+
+  <div class="edit-button ml-3">
+      
+          <i class="fa-solid fa-pencil"></i><a href="index.html"> Cancel Editing</a>
+  </div>
+  </div>
+    </div>
+</html>

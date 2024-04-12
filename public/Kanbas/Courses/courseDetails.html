@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://kit.fontawesome.com/9512067f90.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link href="courseCSS.css"
+        rel="stylesheet"/>
+</head>
+<body>
+
+
+<nav aria-label="breadcrumb" class="custom-breadcrumb ">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><i class="fas fa-bars"></i></li>
+      <li class="breadcrumb-item">Course Name</li>
+      <li class="breadcrumb-item">Term</li>
+      <li class="breadcrumb-item section-crumb">Section</li>
+      <li class="breadcrumb-item active " aria-current="page">Settings</li>
+      
+      
+  </ol>
+  <hr class="my-1">
+  
+</nav>
+
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-1 Navigation">
+      <div class="link-container">
+          <!-- ... (left Navigation content unchanged) ... -->
+
+              <ul>
+                  <li>
+                      <div class="block-container">
+                      <p><i class="fa-regular fa-user" id="custom-user"></i><br>
+                      <a href="../profile/index.html">Account</a></p>
+                  </div>
+                  </li>
+
+                  <li><div class="block-container"> <p><i class="fa-solid fa-gauge" id="custom-board"></i> <br>
+                      <a href="../dashboard.html">Dashboard</a></p></div></li>
+
+                  <li class="navSelected">
+                      <div class="block-container"><p><i class="fa-solid fa-book" id="custom-book"></i>
+                      <br>
+                      <a href="home.html">Courses</a>
+                  </p>
+              </div>
+              </li>
+
+                  <li><div class="block-container">
+                      <p><i class="fa-solid fa-calendar-days" id="custom-calendar"> </i><br>
+                      <a href="#">Calendar</a>
+                  </p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-inbox" id="custom-icon"></i> <br>
+                      <a href="#">Inbox</a></p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-regular fa-clock" id="custom-clock"> </i> <br>
+                      <a href="#">History</a></p></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-tv" id="custom-studio"></i> <br>
+                      <a href="#">Studio</a></div></li>
+
+                  <li><div class="block-container"><p><i class="fa-solid fa-right-from-bracket" id="custom-common"></i><br>
+                      <a href="#">Commons</a></div></li>
+                  </p>
+                  <li><div class="block-container"><p><i class="fa-solid fa-circle-question" id="custom-help"></i>
+                      <br> <a href="#">Help</a></p></div>
+                  </li>
+                  </ul>
+      </div>
+  </div>
+  <div class="col-2 account-navigation">
+          
+      <ul class="list-group">
+          <!-- ... (account navigation content unchanged) ... -->
+      
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="#">Modules</a></li>
+                  <li><a href="#">Piazza</a></li>
+                  <li><a href="#">Zoom Meetings</a></li>
+                  <li ><a href="../assignments/index.html">Assignments</a></li>
+                  <li><a href="#">Quizzes</a></li>
+                  <li ><a href="grades.html">Grades</a></li>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Panopto Video</a></li>
+                  <li><a href="#">Discussions</a></li>
+                  <li><a href="#">Announcements</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Files</a></li>
+                  <li><a href="#">Rubrics</a></li>
+                  <li><a href="#">Outcomes</a></li>
+                  <li><a href="#">Collaborations</a></li>
+                  <li><a href="#">Syllabus</a></li>
+                  <li class="selected"><a href="courseDetails.html">Settings</a></li>
+
+      </ul>
+  </div>
+
+  <div class="col-8">
+    <div class="button-group d-flex mb-3">
+      <button class="btn btn-primary mr-2 selected">Course Details</button>
+      <button class="btn btn-primary mr-2">Sections</button>
+      <a href="navigation.html" class="btn btn-primary mr-2">Navigation</a>
+      <button class="btn btn-primary mr-2">Apps</button>
+      <button class="btn btn-primary mr-2">Feature Options</button>
+      <button class="btn btn-primary">Integrations</button>
+     
+  
+  </div>
+  <hr class="btn-line" />
+  <h3>Course Details</h3>
+  <div class="course-details">
+    <form>
+      <div class="form-group" style="width:300px;">
+          <label for="image">Image:</label>
+          <input type="file" class="form-control" id="image" name="filename">
+      </div>
+      <p>Name: CS5610 Web Development</p>
+      <p>Course Code: CS5610.12345</p>
+     <p>Blueprint Course: No</p>
+
+
+     
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-temp">
+        <label class="form-check-label" for="chkbox-temp">Enable Course as a course Template</label>
+    </div>
+    <br>
+  
+      <!-- ... Other form elements ... -->
+
+      
+
+      <div class="form-group">
+        <label for="select-one-zone">Time Zone:</label>
+        <select class="form-control" id="select-one-zone">
+            <option selected value="zone">Eastern Time Zone</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sisId">SIS ID:</label>
+        <input type="text" class="form-control" id="sisId" value="CS4550.12345">
+    </div>
+    <div class="form-group">
+        <label for="select-one-term">Participation:</label>
+        <select class="form-control" id="select-one-term">
+            <option selected value="term">Term</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="date" class="form-control" id="startDate" name="startDate">
+    </div>
+    <div class="form-group">
+        <label for="untilDate">End Date:</label>
+        <input type="date" class="form-control" id="untilDate" name="untilDate">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-before">
+        <label class="form-check-label" for="chkbox-before">Restrict students from viewing course before term start date</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-after">
+        <label class="form-check-label" for="chkbox-after">Restrict students from viewing course after term start date</label>
+    </div>
+    <div class="form-group">
+        <label for="select-one">Default due time:</label>
+        <select class="form-control" id="select-one">
+            <option selected value="default">Account default(11.59pm)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select-lang">Language:</label>
+        <select class="form-control" id="select-lang">
+            <option selected value="default">Not set (user-configurable, default to English)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="fileStorage">File Storage:</label>
+        <p class="form-control-static">100000 megabytes</p>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-large">
+        <label class="form-check-label" for="chkbox-large">Launch SpeedGrader Filtered by Student Group</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-scheme">
+        <label class="form-check-label" for="chkbox-scheme">Enable Course grading scheme</label>
+    </div>
+    <div class="form-group">
+        <label for="select-license">License:</label>
+        <select class="form-control" id="select-license">
+            <option selected value="default">Private (Copyrighted)</option>
+        </select>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-copy">
+        <label class="form-check-label" for="chkbox-copy">Copyright and license information must be provided for files before they are published</label>
+    </div>
+    <div class="form-group">
+        <label for="select-visibility">Visibility:</label>
+        <select class="form-control" id="select-visibility">
+            <option selected value="default">Course</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select-format">Format:</label>
+        <select class="form-control" id="select-format">
+            <option selected value="default">On-Campus</option>
+        </select>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="chkbox-mastery">
+        <label class="form-check-label" for="chkbox-mastery">Enable individual learning paths for students based on assessment</label>
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" rows="10"></textarea>
+    </div>
+    <p>more options</p>
+    <button type="submit" class="btn btn-primary" id="updateBtn">Update Course Details</button>
+  </form>
+  
+
+</div>
+</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

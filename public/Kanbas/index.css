@@ -1,0 +1,421 @@
+
+/**
+    For Navigation bar
+*/
+.custom {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: red;
+}
+.account {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    color: grey;
+}
+
+
+.Navigation {
+    position: absolute;
+    width: 80px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: -63px;
+   
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 75px;
+    border-radius: 5px;
+    
+}
+
+.account-navigation {
+    display: absolute;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+/* Reset default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+
+
+
+
+
+
+
+  /** 
+    Dashboard
+  */
+.dashboard-header {
+    text-align:justify;
+    padding: 10px;
+    width: 200px; /* Match the width of the navigation bar */
+}
+
+.dashboard-header h1 {
+    margin-left: 100px;
+    position: relative;
+    font-size: 35px; /* Adjust the font size as needed */
+    
+}
+
+/* Adjust the margin for the content to avoid overlapping with the fixed header and navigation bar */
+.content {
+    margin-left: 500px; /* Adjust the value as needed */
+    margin-top: 30px; /* Add spacing */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dashboard-hr {
+    margin-bottom: 20px;
+    border: none;
+    height: 1px; /* Adjust the height as needed */
+    background-color: black; /* Color of the horizontal rule */
+}
+
+.published-courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 270px;
+    gap: 30px; /* This ensures there's a gap of 30px between each course */
+    margin-left: -10px; /* Offset for Bootstrap's default margin */
+    margin-right: -15px; /* Offset for Bootstrap's default margin */
+}
+.card {
+    width: 250px; /* Set the min-width */
+    max-width: 270px; /* Set the max-width */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .published-courses-grid {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 900px) {
+    .published-courses-grid {
+        justify-content: center;
+    }
+}
+
+/* Add CSS for the Navigation */
+.Navigation {
+    width: 83px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+   
+}
+
+.Navigation ul {
+    list-style: none;
+}
+
+.Navigation li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+.content {
+    margin-bottom: 350px; /* Adjust as needed to make space for the Navigation */
+    padding: 5px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+/* Add a hover style for the block container */
+.Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.account-navigation {
+    width: 190px; /* Set the desired width */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 350px;
+}
+
+.account-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-navigation ul li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.account-navigation ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: red; /* Default text color for non-selected links */
+    display: block;
+    text-align: left;
+}
+
+.account-navigation ul li.selected a {
+    color: black; /* Selected link text color */
+    border-left: 5px solid black; /* Black border to indicate selected link */
+    padding-left: 10px; /* Space between the left border and link text */
+}
+
+#custom-pic {
+    font-size: 150px; /* Increase the font size for a larger icon */
+    color: gray;
+
+}
+.profile-pic {
+    margin-bottom: 200px;
+}
+
+.edit-button {
+    margin-bottom: 600px;
+}
+
+
+.edit-button {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Style the Edit Profile button and its icon */
+.edit-profile-link {
+    text-decoration: none;
+    font-family: serif;
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+
+}
+
+/* Style the Edit Profile icon */
+.fa-solid.fa-pencil {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+#cancelButton {
+    margin-bottom: 800px;
+}
+
+.btn-red-bg {
+    background-color: red;
+    color: white; /* You can also adjust the text color */
+  }
+
+
+.Navigation ul li.navSelected p,
+.Navigation ul li.navSelected a,
+.Navigation ul li.navSelected,
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color :red ;
+    background-color: white;
+    width: 85px;
+    border-radius: 8px;
+    
+}
+
+
+  .Navigation ul li .block-container:hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    
+}
+.Navigation ul li .block-container .navSelected   {
+    background-color: white;
+    color :red;
+    border-radius: 5px;
+}
+
+.Navigation ul li .block-container:hover p,
+.Navigation ul li .block-container:hover a {
+    color: red; /* Change the text color to red when the block is hovered */
+}
+
+.custom-breadcrumb {
+    padding-left: calc(250px - 7rem);  /* Assuming your sidebar is 240px wide; adjust as needed */
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+.breadcrumb li {
+    margin-right: 5px; /* adjust as needed */
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #f0f5f8; /* Adjust color as needed */
+    content: '';
+    background-color: transparent;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em; /* reduce font size */
+    letter-spacing: 0.9px; /* adjust letter spacing */
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: red;
+}
+
+.green-border-left {
+    border-left: 3px solid green;
+    color: black;
+}
+
+.section-crumb::after {
+    content: ">";
+    color: #6c757d;  /* Adjust the color if needed */
+    padding: 0 0.5rem; /* Space around the > character */
+}
+
